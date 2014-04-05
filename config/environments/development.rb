@@ -27,6 +27,9 @@ SampleApp::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  # Don't fallback to assets pipeline if a precompiled asset is missed
+  config.assets.compile = false
+
   # sprockets-better-errors in dev
   config.assets.raise_production_errors = true
 end
